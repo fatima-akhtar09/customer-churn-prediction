@@ -22,7 +22,7 @@ pip install pandas numpy matplotlib seaborn
 
 * **Baseline (always "stay"):** accuracy **0.735**
 * **Best model:** Logistic Regression, AUC **0.842**, recall **0.754** at threshold **0.30**
-* **Top churn drivers (permutation importance):** **tenure**, **TotalCharges**, **Contract_Two year**
+* **Top features by permutation importance:** **tenure**, **TotalCharges**, **Contract_Two year**
 * **Threshold chosen:** **0.30**, because it increases recall and helps catch more potential churners when missing a churner is costly.
 * **Engineered features:** **n_services, is_new, charge_per_mo, price_jump**; effect on AUC: **0.8422 → 0.8420**
 * **Biggest lesson:** **Model evaluation should consider the business cost of false negatives and false positives, not accuracy alone.**
